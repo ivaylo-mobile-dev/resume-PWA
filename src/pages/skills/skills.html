@@ -10,9 +10,103 @@
     <ion-title>Skills</ion-title>
   </ion-navbar>
 
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="skills">
+      <ion-segment-button value="personal">
+        Personal
+      </ion-segment-button>
+      <ion-segment-button value="technical">
+        Technical
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <div [ngSwitch]="skills">
+    <ion-list *ngSwitchCase="'personal'">
 
-<ion-content padding>
+      <ion-item>
+        Communication and presentation
+      </ion-item>
 
+      <ion-item>
+        Analytical and technical
+      </ion-item>
+
+      <ion-item>
+        Problem solving and trouble shooting
+      </ion-item>
+
+      <ion-item>
+        Interpersonal and teamwork
+      </ion-item>
+
+      <ion-item>
+        Leadership and teambuilding
+      </ion-item>
+
+      <ion-item>
+        Decision making and self-sufficient
+      </ion-item>
+
+      <ion-item>
+        Organizational and multitasking
+      </ion-item>
+
+      <ion-item>
+        Time and project management
+      </ion-item>
+
+      <ion-item>
+        Professional and courteous
+      </ion-item>
+
+      <ion-item>
+        Design, artistic and aesthetic
+      </ion-item>
+
+      <ion-item>
+        Results driven and goal oriented
+      </ion-item>
+
+      <ion-item>
+        Resourceful and detail oriented
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'technical'">
+
+      <ion-item>
+        Mobile Application Development
+      </ion-item>
+
+      <ion-item>
+        Web Application Development
+      </ion-item>
+
+      <ion-item>
+        Web Development and Design
+      </ion-item>
+
+      <ion-item>
+        Software Engineering
+      </ion-item>
+
+      <ion-item>
+        Database
+      </ion-item>
+
+      <ion-item>
+        Business Intelligence
+      </ion-item>
+
+      <ion-item>
+        2D/3D Graphics and Models
+      </ion-item>
+
+    </ion-list>
+
+  </div>
 </ion-content>
