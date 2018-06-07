@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { EducationPage } from './education';
 
-import { AppHeaderComponentModule } from '../../components/app-header/app-header.module';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   declarations: [EducationPage],
-  imports: [IonicPageModule.forChild(EducationPage),
-    AppHeaderComponentModule
+  imports: [
+    IonicPageModule.forChild(EducationPage),
+    ComponentsModule
   ],
 })
 export class EducationPageModule {}
