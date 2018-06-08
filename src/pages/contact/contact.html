@@ -14,7 +14,7 @@
 
 </ion-header>
 
-<ion-content>
+<ion-content padding-left padding-right>
   <ion-list no-border>
 
     <ion-list-header text-wrap>
@@ -32,20 +32,21 @@
       ivayloslav@hotmail.com
     </ion-item>
 
-    <ion-item>
+    <button ion-item  (click)="openUrl()">
       <ion-icon name='logo-skype' item-start></ion-icon>
       ivayloslav@hotmail.com
-    </ion-item>
+    </button>
 
-    <ion-item>
+
+    <button ion-item  (click)="openLinkedInUrl()">
       <ion-icon name='logo-linkedin' item-start></ion-icon>
       linkedin.com/in/slavovivaylo
-    </ion-item>
+    </button>
 
-    <ion-item>
+    <button ion-item  (click)="openGitHubUrl()">
       <ion-icon name='logo-github' item-start></ion-icon>
       github.com/ivaylo-mobile-dev
-    </ion-item>
+    </button>
 
     <ion-item>
       <ion-icon name='pin' item-start></ion-icon>
