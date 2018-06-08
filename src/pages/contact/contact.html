@@ -15,38 +15,49 @@
 </ion-header>
 
 <ion-content padding-left padding-right>
-  <ion-list no-border>
+  <ion-list>
 
     <ion-list-header text-wrap>
 
       Mobile Software Developer and Designer
     </ion-list-header>
 
-    <ion-item>
-      <ion-icon name='call' item-start></ion-icon>
-      (780)710-6917
-    </ion-item>
+    <!-- Tel -->
 
-    <ion-item>
+    <button ion-item  (click)="openTelUrl()">
+      <ion-icon name='call' item-start></ion-icon>
+      +1(780)710-6917
+    </button>
+
+    <!-- Email -->
+
+    <button ion-item  (click)="openEmailUrl()">
       <ion-icon name='mail' item-start></ion-icon>
       ivayloslav@hotmail.com
-    </ion-item>
+    </button>
+
+    <!-- Skype -->
 
     <button ion-item  (click)="openUrl()">
       <ion-icon name='logo-skype' item-start></ion-icon>
       ivayloslav@hotmail.com
     </button>
 
+    <!-- LinkedIn -->
 
     <button ion-item  (click)="openLinkedInUrl()">
       <ion-icon name='logo-linkedin' item-start></ion-icon>
       linkedin.com/in/slavovivaylo
     </button>
 
+    <!-- GitHub -->
+
     <button ion-item  (click)="openGitHubUrl()">
       <ion-icon name='logo-github' item-start></ion-icon>
       github.com/ivaylo-mobile-dev
     </button>
+
+    <!-- Address -->
 
     <ion-item>
       <ion-icon name='pin' item-start></ion-icon>
@@ -54,6 +65,13 @@
       <p>Edmonton, AB</p>
       <p>T6J 2V3</p>
     </ion-item>
+
+    <!-- PDF download -->
+
+    <button ion-item  (click)="openPDFUrl()">
+      <ion-icon name='download' item-start></ion-icon>
+      Download PDF resume
+    </button>
 
   </ion-list>
 
