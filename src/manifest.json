@@ -2,10 +2,8 @@
   "name": "Slavov PWA Resume",
   "short_name": "Ivaylo Slavov",
   "description": "Ivaylo Slavov's resume as a Progressive Web App.",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "start_url": "index.html",
   "display": "standalone",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/imgs/icon-72x72.png",
@@ -48,5 +46,8 @@
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "orientation": "portrait",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3"
 }
