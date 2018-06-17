@@ -24,10 +24,15 @@
 
     <!-- Tel -->
 
-    <button ion-item  (click)="openTelUrl()">
+    <ion-item>
       <ion-icon name='call' item-start></ion-icon>
-      +1(780)710-6917
-    </button>
+      (780)710-6917
+      <a ion-button href="tel:+1780-710-6917" outline item-end icon-lef>
+        <ion-icon name="call"></ion-icon>
+        Call me
+      </a>
+
+    </ion-item>
 
     <!-- Email -->
 
@@ -38,7 +43,7 @@
 
     <!-- Skype -->
 
-    <button ion-item  (click)="openUrl()">
+    <button ion-item disabled (click)="openUrl()">
       <ion-icon name='logo-skype' item-start></ion-icon>
       ivayloslav@hotmail.com
     </button>
@@ -68,10 +73,10 @@
 
     <!-- PDF download -->
 
-    <button ion-item  (click)="openPDFUrl()">
+    <!--button ion-item  (click)="openPDFUrl()">
       <ion-icon name='download' item-start></ion-icon>
       Download PDF resume
-    </button>
+    </button>-->
 
   </ion-list>
 

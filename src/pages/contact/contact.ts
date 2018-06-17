@@ -23,10 +23,6 @@ export class ContactPage {
     console.log('ionViewDidLoad ContactPage');
   }
 
-  openTelUrl(){
-    window.open('tel:17897196917', '_system');
-  }
-
   openEmailUrl(){
     window.open('mailto:ivayloslav@hotmail.com', '_system');
   }

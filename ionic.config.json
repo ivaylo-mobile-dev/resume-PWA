@@ -1,6 +1,6 @@
 {
   "name": "resume-PWA",
-  "app_id": "822c3051",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "pro_id": "822c3051"
 }
