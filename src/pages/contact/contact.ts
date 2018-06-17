@@ -31,6 +31,10 @@ export class ContactPage {
     window.open('https://www.linkedin.com/in/slavovivaylo/', '_system');
   }
 
+  openWebsiteUrl(){
+    window.open('https://ivaylo.slavov.ca/', '_system');
+  }
+
   openGitHubUrl(){
     window.open('https://github.com/ivaylo-mobile-dev', '_system');
   }
